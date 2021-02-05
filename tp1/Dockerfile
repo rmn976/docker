@@ -7,4 +7,5 @@ RUN echo "virtualenv" >> /app/requirements.txt
 RUN echo "flask" >> /app/requirements.txt
 RUN python3 -m pip freeze
 RUN python3 -m pip install -r /app/requirements.txt
+EXPOSE 5000
 CMD python3 /app/app_test.py
